@@ -5,6 +5,18 @@ public class Students {
 	private String Name;
 	private int Age;
 	
+	
+	
+	public Students() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Students(String name, int age) {
+		super();
+		Name = name;
+		Age = age;
+	}
 	public String getName() {
 		return Name;
 	}

@@ -5,14 +5,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<%@ taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page import="com.javalpf323.web.model.*" %>
+<%@ page import="java.util.*" %>
 </head>
 <body>
-	
-<h1>首页</h1>
 
-<h5>欢迎来到首页！ <a href="logout">注销</a></h5>
+<c:import url="c_foreach.jsp"></c:import>
 
-姓名 ：${param.name }
-年龄 ：${param.age }
+<c:import url="c_if.jsp"></c:import>
 </body>
 </html>

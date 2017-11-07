@@ -5,14 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<%@ taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 </head>
 <body>
-	
-<h1>首页</h1>
 
-<h5>欢迎来到首页！ <a href="logout">注销</a></h5>
+<%
+	pageContext.setAttribute("people", "张三");
+%>
 
-姓名 ：${param.name }
-年龄 ：${param.age }
+<h1><c:out value="${people }"></c:out> </h1>
+
+<h3> <c:out value="${people2 }" default="默认值"></c:out> </h3>
 </body>
 </html>
